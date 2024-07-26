@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+}
+.txt-box{
+    background-color: #000000;
+    color: #ffffff;
+    height: 100%;
+    padding: 4rem 0;
+}
+.text-box{
+    width: 50%;
+    margin: 0 auto;
+}
+.text-box h1{
+    width: 100%;
+    font-size: 64px;
+    font-weight: bold;
+}
+.text-box p{
+    color: #727272;
+    margin-top: 1rem;
+}
+.main-box{
+    background-color: #222222;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+.table-box{
+    margin: 0px 0px 0px 200px ;
+}
+.table-box h1{
+    color: #ffffff;
+    font-size: 32px;
+}
+.table-box table{
+   border-collapse: collapse;
+}
+.table-box table thead th{
+    color: #ffffff;
+}
+.table-box table th,td{
+    padding: 0.7rem 2.5rem;
+    color: #727272;
+    text-align: left;
+    font-weight: 400;
+}
+.calculate-box{
+    margin: 0px 200px 0px 0px ;
+}
+.calculate-box h1{
+    color: #ffffff;
+    font-size: 32px;
+}
+.calculate-box p{
+    color: #727272;
+    margin-top: 1rem;
+}
+.input-box .row-1{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap:10px;
+    margin-top: 1rem;
+    width: 100%;
+}
+.input-box .row-2{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0.6rem;
+}
+.input-box  input , select{
+    border-radius: 10px;
+    border: none;
+    background-color: #383838;
+    padding:1rem 1rem;
+    color: #727272;
+    font-weight: bold;
+}
+.input-box button{
+    margin-top: 1rem;
+    padding: 1rem 3.5rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: #E6533C;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+@media screen and (max-width:576px) {
+    .text-box{
+        margin: 0 2rem;
+        width: 100%;
+    }
+    .text-box p{
+        width: 80%;
+    }
+    .text-box h1{
+        font-size: 3rem;
+    }
+    .main-box{
+        flex-direction: column;
+        height: 100%;
+    }
+    .table-box {
+        margin: 0 2rem;
+    }
+   .calculate-box{
+        margin: 0 2rem;
+    }
+    .input-box .row-1{
+        grid-template-columns: 0.50fr 0.50fr;
+    }
+    .input-box .row-1 input , select {
+        padding:1rem 0rem ;
+    }
+    .input-box button{
+        margin-bottom: 2rem;
+    }
+}
